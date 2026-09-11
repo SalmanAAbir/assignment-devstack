@@ -35,11 +35,11 @@ export default function TechnologyCard({ tech, added, onAdd }: TechnologyCardPro
 
       <button
         type="button"
-        disabled={added}
+        aria-disabled={added}
         onClick={() => onAdd(tech)}
         className={`mt-5 w-full rounded-xl py-2.5 text-sm font-semibold text-white transition ${
           added
-            ? 'cursor-not-allowed bg-slate-400'
+            ? 'cursor-pointer bg-slate-400 opacity-80'
             : 'stack-btn cursor-pointer bg-slate-900'
         }`}
       >

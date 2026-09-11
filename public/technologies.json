@@ -4,7 +4,7 @@
     "name": "React",
     "category": "Frontend",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/React.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -14,7 +14,7 @@
     "name": "Vue.js",
     "category": "Frontend",
     "description": "An approachable progressive framework for building interactive web applications with ease.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/Vue.svg",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
     "badge": "Versatile"
@@ -24,7 +24,7 @@
     "name": "TypeScript",
     "category": "Language",
     "description": "A strongly typed superset of JavaScript that improves reliability for large-scale apps.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/Typescript.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Essential"
@@ -34,7 +34,7 @@
     "name": "Node.js",
     "category": "Backend",
     "description": "A JavaScript runtime built on Chrome's V8 engine for scalable server-side applications.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/NodeJS.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Fast"
@@ -44,7 +44,7 @@
     "name": "Express",
     "category": "Backend",
     "description": "A minimal and flexible Node.js web framework for APIs and server applications.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/ExpressJS.svg",
     "rating": 4.6,
     "difficulty": "Beginner-Friendly",
     "badge": "Lightweight"
@@ -54,7 +54,7 @@
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful open-source relational database known for reliability and advanced features.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/PostgreSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Top SQL"
@@ -64,7 +64,7 @@
     "name": "MongoDB",
     "category": "Database",
     "description": "A document-oriented NoSQL database designed for flexible and high-volume data storage.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/MongoDB.svg",
     "rating": 4.5,
     "difficulty": "Beginner-Friendly",
     "badge": "Flexible"
@@ -74,7 +74,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework for rapidly building custom user interfaces.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/TailwindCSS.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -84,7 +84,7 @@
     "name": "Docker",
     "category": "DevOps",
     "description": "A platform for packaging applications into portable containers for any environment.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/Docker.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Containers"
@@ -94,7 +94,7 @@
     "name": "Git",
     "category": "Tools",
     "description": "The industry-standard distributed version control system for tracking code changes.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/GIT.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -104,7 +104,7 @@
     "name": "Python",
     "category": "Language",
     "description": "A readable, versatile language widely used for web, data, and automation work.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/Python.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -114,7 +114,7 @@
     "name": "Redis",
     "category": "Database",
     "description": "An in-memory data store used for caching, sessions, and real-time workloads.",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/gui-bus/TechIcons@main/Light/Redis.svg",
     "rating": 4.6,
     "difficulty": "Advanced",
     "badge": "Fast"
