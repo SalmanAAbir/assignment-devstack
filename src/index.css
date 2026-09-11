@@ -8,6 +8,7 @@
 :root {
   /* change this one value to retheme the brand */
   --brand-gradient: linear-gradient(90deg, #fc5424 0%, #d81c78 50%, #8434e0 100%);
+  --tech-gradient: linear-gradient(90deg, #ec4899 0%, #8b5cf6 100%);
 }
 
 body {
@@ -26,6 +27,13 @@ body {
   color: transparent;
 }
 
+.tech-gradient-text {
+  background-image: var(--tech-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .route-chip:hover {
   background-image: var(--brand-gradient);
   -webkit-background-clip: text;
@@ -35,5 +43,5 @@ body {
 
 .stack-btn:hover {
   background-color: transparent;
-  background-image: var(--brand-gradient);
+  background-image: var(--tech-gradient);
 }
