@@ -32,31 +32,31 @@ Then open the local URL shown in the terminal.
 
 ### 1. What is JSX, and why is it used in React?
 
-JSX lets us write HTML-like code inside JavaScript. React uses it so we can describe the UI in a clear way, and then it converts that JSX into normal JavaScript for the browser.
+JSX is HTML-like syntax inside JavaScript. React uses it so building UI feels natural, then converts it to regular JS behind the scenes.
 
 ### 2. What is the difference between props and state?
 
-Props are data sent from a parent component to a child. State is data that belongs to a component and can change over time. Props are read-only for the child, but state can be updated with hooks like `useState`.
+Props come from a parent and stay read-only. State lives inside a component and can change — like with `useState`.
 
 ### 3. What does the `useState` hook do, and where did you use it in this project?
 
-`useState` stores values that can change and re-render the UI. In this project I used it for the mobile menu open/close state, the loading state, the technology list, and the selected stack items.
+It keeps track of changing values and re-renders the UI when they update. I used it for the mobile menu, loading, the tech list, and the selected stack.
 
 ### 4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
 
-`useEffect` runs code after the component renders. I used it to fetch `technologies.json` when the page loads, because fetching data is a side effect and should not run directly inside the component body on every render.
+`useEffect` lets you run extra work after the UI shows up. I needed it to load `technologies.json` when the page opens — that way the fetch happens once, not on every re-render.
 
 ### 5. Why does every item in a `.map()` list need a unique `key` prop?
 
-React uses the `key` to track each list item. With unique keys, React can update only the changed items instead of re-rendering the whole list incorrectly.
+So React can tell items apart and update only what changed, instead of messing up the whole list.
 
 ### 6. What is conditional rendering? Show one place you used it.
 
-Conditional rendering means showing different UI based on a condition. I used it in the Your Stack panel: if the stack is empty, it shows “Your stack is empty.” Otherwise it shows the selected items and the Remove All button.
+It means showing different UI based on a condition. In Your Stack, if nothing’s selected it shows “Your stack is empty.” Otherwise it shows the items and Remove All.
 
-### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+### 7. How do you pass data from a parent to a child, and how does a child send something back?
 
-Parent to child: pass data through props.  
-Child to parent: pass a function as a prop, then the child calls that function.  
+Parent → child: through props.  
+Child → parent: pass a function as a prop, then call it from the child.
 
-Example: `ExploreSection` passes `tech`, `added`, and `onAdd` to `TechnologyCard`. When the button is clicked, the child calls `onAdd(tech)` to update the parent state.
+Example: `ExploreSection` passes `tech`, `added`, and `onAdd` to `TechnologyCard`. On click, the card calls `onAdd(tech)` to update the parent.
