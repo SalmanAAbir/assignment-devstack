@@ -1,3 +1,4 @@
+import { ToastContainer } from 'react-toastify'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import ExploreSection from './components/ExploreSection'
@@ -10,6 +11,7 @@ export default function App() {
       <HeroSection />
       <ExploreSection />
       <Footer />
+      <ToastContainer position="top-right" autoClose={2000} />
     </div>
   )
 }

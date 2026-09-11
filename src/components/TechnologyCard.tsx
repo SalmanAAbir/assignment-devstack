@@ -3,9 +3,11 @@ import type { Technology } from '../types/technology'
 
 type TechnologyCardProps = {
   tech: Technology
+  added: boolean
+  onAdd: (tech: Technology) => void
 }
 
-export default function TechnologyCard({ tech }: TechnologyCardProps) {
+export default function TechnologyCard({ tech, added, onAdd }: TechnologyCardProps) {
   return (
     <article className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex items-start justify-between gap-3">
@@ -33,9 +35,15 @@ export default function TechnologyCard({ tech }: TechnologyCardProps) {
 
       <button
         type="button"
-        className="stack-btn mt-5 w-full cursor-pointer rounded-xl bg-slate-900 py-2.5 text-sm font-semibold text-white transition"
+        disabled={added}
+        onClick={() => onAdd(tech)}
+        className={`mt-5 w-full rounded-xl py-2.5 text-sm font-semibold text-white transition ${
+          added
+            ? 'cursor-not-allowed bg-slate-400'
+            : 'stack-btn cursor-pointer bg-slate-900'
+        }`}
       >
-        Add to Stack
+        {added ? '✓ Added to Stack' : 'Add to Stack'}
       </button>
     </article>
   )

@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
+import { toast } from 'react-toastify'
 import type { Technology } from '../types/technology'
 import TechnologyCard from './TechnologyCard'
 import YourStack from './YourStack'
 
 export default function ExploreSection() {
   const [technologies, setTechnologies] = useState<Technology[]>([])
+  const [stack, setStack] = useState<Technology[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -18,6 +20,27 @@ export default function ExploreSection() {
         setLoading(false)
       })
   }, [])
+
+  const addToStack = (tech: Technology) => {
+    const alreadyAdded = stack.some((item) => item.id === tech.id)
+    if (alreadyAdded) {
+      toast.warn(`${tech.name} is already in your stack.`)
+      return
+    }
+    setStack((prev) => [...prev, tech])
+    toast.success(`${tech.name} added to your stack.`)
+  }
+
+  const removeFromStack = (id: string) => {
+    const tech = stack.find((item) => item.id === id)
+    setStack((prev) => prev.filter((item) => item.id !== id))
+    toast.info(`${tech?.name ?? 'Technology'} removed from your stack.`)
+  }
+
+  const removeAllFromStack = () => {
+    setStack([])
+    toast.error('All technologies removed from your stack.')
+  }
 
   if (loading) {
     return (
@@ -48,11 +71,20 @@ export default function ExploreSection() {
         <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-[1fr_280px] xl:grid-cols-[1fr_300px]">
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
             {technologies.map((tech) => (
-              <TechnologyCard key={tech.id} tech={tech} />
+              <TechnologyCard
+                key={tech.id}
+                tech={tech}
+                added={stack.some((item) => item.id === tech.id)}
+                onAdd={addToStack}
+              />
             ))}
           </div>
 
-          <YourStack />
+          <YourStack
+            stack={stack}
+            onRemove={removeFromStack}
+            onRemoveAll={removeAllFromStack}
+          />
         </div>
       </div>
     </section>
