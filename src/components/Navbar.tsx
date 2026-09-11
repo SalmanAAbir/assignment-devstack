@@ -47,30 +47,28 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* phone: burger | logo | auth */}
-      <div className="mx-auto grid h-16 grid-cols-3 items-center px-3 md:hidden">
-        <div className="justify-self-start">
-          <button
-            type="button"
-            onClick={toggleMenu}
-            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-            className="flex h-10 w-10 items-center justify-center text-slate-700"
-          >
-            {menuOpen ? <HiOutlineX size={24} /> : <HiOutlineMenu size={24} />}
-          </button>
-        </div>
+      {/* phone bar: burger | logo | auth */}
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:hidden">
+        <button
+          type="button"
+          onClick={toggleMenu}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          className="flex h-10 w-10 items-center justify-center rounded-lg text-slate-700"
+        >
+          {menuOpen ? <HiOutlineX size={24} /> : <HiOutlineMenu size={24} />}
+        </button>
 
-        <a href="#home" className="justify-self-center" onClick={closeMenu}>
-          <img src={logo} alt="DevStack" className="h-7 w-auto" />
+        <a href="#home" className="shrink-0" onClick={closeMenu}>
+          <img src={logo} alt="DevStack" className="h-8 w-auto" />
         </a>
 
-        <div className="flex items-center justify-self-end gap-2">
-          <button type="button" className="route-chip text-xs font-semibold text-slate-600">
+        <div className="flex items-center gap-3">
+          <button type="button" className="route-chip text-sm font-semibold text-slate-600">
             Sign In
           </button>
           <button
             type="button"
-            className="brand-gradient rounded-full px-3 py-1.5 text-xs font-semibold text-white"
+            className="brand-gradient rounded-full px-3.5 py-1.5 text-sm font-semibold text-white"
           >
             Sign Up
           </button>
