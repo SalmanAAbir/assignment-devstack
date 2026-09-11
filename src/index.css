@@ -32,3 +32,8 @@ body {
   background-clip: text;
   color: transparent;
 }
+
+.stack-btn:hover {
+  background-color: transparent;
+  background-image: var(--brand-gradient);
+}

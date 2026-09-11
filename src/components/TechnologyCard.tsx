@@ -33,7 +33,7 @@ export default function TechnologyCard({ tech }: TechnologyCardProps) {
 
       <button
         type="button"
-        className="mt-5 w-full rounded-xl bg-slate-900 py-2.5 text-sm font-semibold text-white"
+        className="stack-btn mt-5 w-full cursor-pointer rounded-xl bg-slate-900 py-2.5 text-sm font-semibold text-white transition"
       >
         Add to Stack
       </button>
