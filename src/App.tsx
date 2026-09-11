@@ -1,12 +1,12 @@
-import DeskNav from './components/DeskNav'
+import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
 
-function App() {
+export default function App() {
   return (
     <div>
-      <DeskNav />
-      <div className="min-h-[140vh]" />
+      <Navbar />
+      <HeroSection />
+      <div className="min-h-[80vh]" />
     </div>
   )
 }
-
-export default App

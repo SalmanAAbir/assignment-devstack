@@ -25,3 +25,10 @@ body {
   background-clip: text;
   color: transparent;
 }
+
+.route-chip:hover {
+  background-image: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
