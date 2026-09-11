@@ -1,13 +1,10 @@
-import { FaReact } from 'react-icons/fa'
-
 function App() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-4">
-      <h1 className="text-4xl font-bold flex items-center gap-2">
-        <FaReact className="text-primary" />
-        assignment-devstack
+      <h1 className="text-4xl font-extrabold">
+        Dev<span className="brand-gradient-text">Stack</span>
       </h1>
-      <button className="btn btn-primary">Get Started</button>
+      <button className="btn border-0 text-white brand-gradient">Get Started</button>
     </div>
   )
 }
