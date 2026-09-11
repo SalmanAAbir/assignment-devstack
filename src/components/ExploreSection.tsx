@@ -61,7 +61,7 @@ export default function ExploreSection() {
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-10">
         <div className="max-w-xl">
           <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-            Explore the <span className="tech-gradient-text">Technologies</span>
+            Explore the <span className="brand-gradient-text">Technologies</span>
           </h2>
           <p className="mt-2 text-sm text-slate-500 sm:text-base">
             Pick one technology per category to build your ideal stack.
